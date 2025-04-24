@@ -5,16 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QuietNest - Protect Your Baby From Harmful Noise</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main class="container">
-        <header>
-            <img src="logo.png" alt="QuietNest Logo" class="logo">
-        </header>
-        
-        <section class="hero">
-            <h1>Protect Your Baby From Harmful Noise — QuietNest App</h1>
-            <p class="subtitle">Install QuietNest on your phone. Get real-time alerts when the noise around you becomes too loud for you and your baby's ears. Stay safe, stay confident.</p>
+    <header class="main-header">
+        <nav>
+            <div class="logo">QuietNest</div>
+            <div class="email-signup">
+                <input type="email" placeholder="Enter your email" class="email-input">
+                <button class="sign-up-btn">Sign up</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1519824145371-296894a0daa9?ixlib=rb-4.0.3')">
+            <div class="hero-content">
+                <h1>Welcome,</h1>
+                <p class="hero-text">QuietNest wants to empower pregnant women with knowledge to navigate life with confidence and ensure the wellbeing of their unborn child</p>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2 class="section-title">You can wear noise protection but your foetus can't...</h2>
+            
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">👂</div>
+                    <h3>Your foetus hears more in your womb than you think...</h3>
+                    <p>The womb decreases noise with some dBs, but that's not enough in a lot of situations</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🎭</div>
+                    <h3>The environment is louder than you think...</h3>
+                    <p>An occasional event e.g. a concert, an orchestra, a cinema, a wedding party, a festivity, a fair, a market...</p>
+                    <p>A work environment! e.g. a production line, a dj set,...</p>
+                    <p class="highlight">These places can be unexpectedly loud</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🌟</div>
+                    <h3>...but your baby can experience tranquility with QuietNest</h3>
+                    <p>QuietNest is a supportive and adjustable solution that will reduce external noise and monitor sound levels in real-time</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Want to know more about this topic?</h2>
+            <p>Subscribe now to receive scientific insights, exclusive updates, and early access</p>
             <button class="cta-button" onclick="showForm()">Get the app for €4.99</button>
         </section>
 
@@ -27,12 +67,16 @@
                 </div>
                 <div class="form-group">
                     <label for="interest">Why are you interested in QuietNest?</label>
-                    <textarea id="interest" required placeholder="Tell us more..."></textarea>
+                    <textarea id="interest" required placeholder="Tell us more about your journey..."></textarea>
                 </div>
                 <button type="submit" class="submit-button">Submit</button>
             </form>
         </div>
     </main>
+
+    <footer>
+        <p>QuietNest - Empowering pregnant women to protect what matters most</p>
+    </footer>
 
     <script>
         function showForm() {
@@ -43,8 +87,7 @@
             event.preventDefault();
             const email = document.getElementById('email').value;
             const interest = document.getElementById('interest').value;
-            // In a real app, this would send data to a server
-            alert('Thank you for your interest! We\'ll notify you when the app launches.');
+            alert('Thank you for your interest! We\'ll send you exclusive insights and updates soon.');
             document.getElementById('signup-form').classList.add('hidden');
         }
     </script>
