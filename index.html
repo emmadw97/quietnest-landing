@@ -3,79 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuietNest - Protect Your Baby From Harmful Noise</title>
+    <title>QuietNest - Smart Noise Monitoring for Your Baby's Development</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="main-header">
         <nav>
             <div class="logo">QuietNest</div>
-            <div class="email-signup">
-                <input type="email" placeholder="Enter your email" class="email-input">
-                <button class="sign-up-btn">Sign up</button>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#science">Science</a>
+                <a href="#story">Our Story</a>
+                <button class="primary-button" onclick="showForm()">Get the App</button>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1519824145371-296894a0daa9?ixlib=rb-4.0.3')">
+        <section class="hero">
             <div class="hero-content">
-                <h1>Welcome,</h1>
-                <p class="hero-text">QuietNest wants to empower pregnant women with knowledge to navigate life with confidence and ensure the wellbeing of their unborn child</p>
+                <h1>Protect Your Baby's Development with Smart Noise Monitoring</h1>
+                <p class="hero-text">The first app that helps you monitor and protect your baby from harmful noise levels during pregnancy. Available for iPhone, Apple Watch, and other smart devices.</p>
+                <div class="hero-cta">
+                    <button class="cta-button" onclick="showForm()">Try QuietNest for €4.99</button>
+                    <p class="hero-subtext">✨ Join thousands of mindful moms-to-be</p>
+                </div>
+                <div class="device-compatibility">
+                    <img src="apple-watch.png" alt="Apple Watch" class="device-icon">
+                    <img src="iphone.png" alt="iPhone" class="device-icon">
+                    <img src="android.png" alt="Android" class="device-icon">
+                </div>
             </div>
         </section>
 
-        <section class="features">
-            <h2 class="section-title">You can wear noise protection but your foetus can't...</h2>
+        <section id="features" class="features">
+            <h2 class="section-title">Smart Features for Your Peace of Mind</h2>
             
             <div class="feature-grid">
                 <div class="feature-item">
-                    <div class="feature-icon">👂</div>
-                    <h3>Your foetus hears more in your womb than you think...</h3>
-                    <p>The womb decreases noise with some dBs, but that's not enough in a lot of situations</p>
+                    <div class="feature-icon">📱</div>
+                    <h3>Real-time Noise Monitoring</h3>
+                    <p>Get instant alerts when environmental noise reaches levels that could affect your baby's development</p>
                 </div>
 
                 <div class="feature-item">
-                    <div class="feature-icon">🎭</div>
-                    <h3>The environment is louder than you think...</h3>
-                    <p>An occasional event e.g. a concert, an orchestra, a cinema, a wedding party, a festivity, a fair, a market...</p>
-                    <p>A work environment! e.g. a production line, a dj set,...</p>
-                    <p class="highlight">These places can be unexpectedly loud</p>
+                    <div class="feature-icon">⌚</div>
+                    <h3>Smart Watch Integration</h3>
+                    <p>Discrete vibration alerts on your Apple Watch or other smart devices when noise levels are too high</p>
                 </div>
 
                 <div class="feature-item">
-                    <div class="feature-icon">🌟</div>
-                    <h3>...but your baby can experience tranquility with QuietNest</h3>
-                    <p>QuietNest is a supportive and adjustable solution that will reduce external noise and monitor sound levels in real-time</p>
+                    <div class="feature-icon">📊</div>
+                    <h3>Scientific Insights</h3>
+                    <p>Access the latest research about noise effects on fetal development and stress levels</p>
                 </div>
             </div>
         </section>
 
-        <section class="cta-section">
-            <h2>Want to know more about this topic?</h2>
-            <p>Subscribe now to receive scientific insights, exclusive updates, and early access</p>
-            <button class="cta-button" onclick="showForm()">Get the app for €4.99</button>
+        <section id="science" class="science-section">
+            <h2>Backed by Science</h2>
+            <div class="science-content">
+                <div class="science-text">
+                    <h3>Why Noise Matters During Pregnancy</h3>
+                    <ul class="science-list">
+                        <li>Studies show that excessive noise can increase stress hormones in pregnant women</li>
+                        <li>Loud environments may affect fetal heart rate and movement patterns</li>
+                        <li>Regular exposure to high noise levels could impact baby's hearing development</li>
+                    </ul>
+                </div>
+                <div class="science-visual">
+                    <img src="wave-pattern.png" alt="Sound wave visualization" class="wave-image">
+                </div>
+            </div>
+        </section>
+
+        <section id="story" class="story-section">
+            <h2>How It All Began</h2>
+            <div class="story-content">
+                <p>It started when my friend Lieselotte was three months pregnant and eager to attend the Core Festival. Her maternal instinct made her research the effects of loud noises on pregnancy, revealing potential risks to fetal development.</p>
+                <p>This sparked an idea: create a solution that empowers expectant mothers to confidently navigate their daily lives while protecting their unborn children.</p>
+                <p>Today, QuietNest helps thousands of mothers-to-be make informed decisions about their sound environment, backed by real-time data and scientific research.</p>
+            </div>
+        </section>
+
+        <section class="app-preview">
+            <div class="app-screens">
+                <img src="app-screen1.png" alt="QuietNest app screen" class="app-screen">
+                <img src="app-screen2.png" alt="QuietNest app features" class="app-screen">
+            </div>
         </section>
 
         <div id="signup-form" class="hidden">
             <form id="interest-form" onsubmit="handleSubmit(event)">
-                <h2>Almost there!</h2>
+                <div class="form-header">
+                    <h2>Start Your Journey with QuietNest</h2>
+                    <p>14-day money-back guarantee</p>
+                </div>
                 <div class="form-group">
                     <label for="email">Email address</label>
                     <input type="email" id="email" required placeholder="Enter your email">
                 </div>
                 <div class="form-group">
-                    <label for="interest">Why are you interested in QuietNest?</label>
-                    <textarea id="interest" required placeholder="Tell us more about your journey..."></textarea>
+                    <label for="interest">What interests you most about QuietNest?</label>
+                    <textarea id="interest" required placeholder="Tell us about your pregnancy journey..."></textarea>
                 </div>
-                <button type="submit" class="submit-button">Submit</button>
+                <button type="submit" class="submit-button">Get Started for €4.99</button>
+                <p class="form-footer">Join our community of mindful mothers</p>
             </form>
         </div>
     </main>
 
     <footer>
-        <p>QuietNest - Empowering pregnant women to protect what matters most</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>QuietNest</h3>
+                <p>Empowering pregnant women with knowledge and tools for a peaceful pregnancy</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>support@quietnest.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">Facebook</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script>
@@ -87,7 +144,7 @@
             event.preventDefault();
             const email = document.getElementById('email').value;
             const interest = document.getElementById('interest').value;
-            alert('Thank you for your interest! We\'ll send you exclusive insights and updates soon.');
+            alert('Thank you for choosing QuietNest! We\'ll send your download instructions shortly.');
             document.getElementById('signup-form').classList.add('hidden');
         }
     </script>
