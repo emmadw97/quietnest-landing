@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuietNest - Smart Noise Monitoring for Your Baby's Development</title>
+    <title>BabyGuard - Protect Your Baby from Harmful Noise Levels</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header class="main-header">
         <nav>
-            <div class="logo">QuietNest</div>
+            <div class="logo"><i class="fas fa-shield-heart"></i> BabyGuard</div>
             <div class="nav-links">
                 <a href="#features">Features</a>
                 <a href="#science">Science</a>
@@ -24,58 +24,81 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-                <h1>Protect Your Baby's Development with Smart Noise Monitoring</h1>
-                <p class="hero-text">The first app that helps you monitor and protect your baby from harmful noise levels during pregnancy. Available for iPhone, Apple Watch, and other smart devices.</p>
-                <div class="hero-cta">
-                    <button class="cta-button" onclick="showForm()">Try QuietNest for €4.99</button>
-                    <p class="hero-subtext">✨ Join thousands of mindful moms-to-be</p>
+                <div class="hero-text-content">
+                    <h1>Smart Noise Protection for Your Growing Baby</h1>
+                    <p class="hero-text">BabyGuard monitors your environment and alerts you when noise levels could affect your baby's development. Get instant notifications on your Apple Watch or phone.</p>
+                    <div class="hero-cta">
+                        <button class="cta-button" onclick="showForm()">Try BabyGuard for €4.99</button>
+                        <p class="hero-subtext"><i class="fas fa-heart"></i> Trusted by thousands of mindful mothers</p>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="pregnant-watch.png" alt="Pregnant woman using BabyGuard on Apple Watch" class="main-image">
                 </div>
                 <div class="device-compatibility">
-                    <img src="apple-watch.png" alt="Apple Watch" class="device-icon">
-                    <img src="iphone.png" alt="iPhone" class="device-icon">
-                    <img src="android.png" alt="Android" class="device-icon">
+                    <div class="device-item">
+                        <img src="apple-watch.png" alt="Apple Watch" class="device-icon">
+                        <span>Apple Watch</span>
+                    </div>
+                    <div class="device-item">
+                        <img src="iphone.png" alt="iPhone" class="device-icon">
+                        <span>iPhone</span>
+                    </div>
+                    <div class="device-item">
+                        <img src="android.png" alt="Android" class="device-icon">
+                        <span>Android</span>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="features" class="features">
-            <h2 class="section-title">Smart Features for Your Peace of Mind</h2>
-            
-            <div class="feature-grid">
+            <h2 class="section-title">Protect Your Baby with Smart Features</h2>
+            <div class="features-grid">
                 <div class="feature-item">
-                    <div class="feature-icon">📱</div>
-                    <h3>Real-time Noise Monitoring</h3>
-                    <p>Get instant alerts when environmental noise reaches levels that could affect your baby's development</p>
+                    <i class="fas fa-ear-listen feature-icon"></i>
+                    <h3>Instant Noise Detection</h3>
+                    <p>Advanced sensors monitor your environment 24/7, detecting potentially harmful noise levels in real-time.</p>
                 </div>
-
                 <div class="feature-item">
-                    <div class="feature-icon">⌚</div>
-                    <h3>Smart Watch Integration</h3>
-                    <p>Discrete vibration alerts on your Apple Watch or other smart devices when noise levels are too high</p>
+                    <i class="fas fa-watch feature-icon"></i>
+                    <h3>Smart Watch Alerts</h3>
+                    <p>Get gentle vibration alerts on your Apple Watch when noise levels become concerning, allowing for immediate action.</p>
                 </div>
-
                 <div class="feature-item">
-                    <div class="feature-icon">📊</div>
-                    <h3>Scientific Insights</h3>
-                    <p>Access the latest research about noise effects on fetal development and stress levels</p>
+                    <i class="fas fa-chart-line feature-icon"></i>
+                    <h3>Personalized Insights</h3>
+                    <p>Track patterns and receive tailored recommendations based on your daily activities and environment.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-shield-heart feature-icon"></i>
+                    <h3>Proactive Protection</h3>
+                    <p>Suggestions for noise reduction and alternative environments when needed.</p>
                 </div>
             </div>
         </section>
 
         <section id="science" class="science-section">
-            <h2>Backed by Science</h2>
-            <div class="science-content">
-                <div class="science-text">
-                    <h3>Why Noise Matters During Pregnancy</h3>
-                    <ul class="science-list">
-                        <li>Studies show that excessive noise can increase stress hormones in pregnant women</li>
-                        <li>Loud environments may affect fetal heart rate and movement patterns</li>
-                        <li>Regular exposure to high noise levels could impact baby's hearing development</li>
-                    </ul>
+            <h2 class="section-title">Backed by Scientific Research</h2>
+            <div class="science-grid">
+                <div class="science-item">
+                    <img src="research-1.png" alt="Fetal development research" class="science-image">
+                    <h3>Fetal Development</h3>
+                    <p>Studies show that excessive noise exposure during pregnancy can impact fetal brain development and stress levels.</p>
                 </div>
-                <div class="science-visual">
-                    <img src="wave-pattern.png" alt="Sound wave visualization" class="wave-image">
+                <div class="science-item">
+                    <img src="research-2.png" alt="Hearing development research" class="science-image">
+                    <h3>Hearing Protection</h3>
+                    <p>Research indicates that the fetal auditory system is sensitive to loud noises, particularly in the third trimester.</p>
                 </div>
+                <div class="science-item">
+                    <img src="research-3.png" alt="Maternal stress research" class="science-image">
+                    <h3>Stress Reduction</h3>
+                    <p>Clinical data supports the importance of managing environmental noise for both maternal and fetal well-being.</p>
+                </div>
+            </div>
+            <div class="science-cta">
+                <button class="primary-button" onclick="showResearch()">View Research Papers</button>
             </div>
         </section>
 
