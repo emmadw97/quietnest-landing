@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuietNest - Protect Your Baby From Harmful Noise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <img src="logo.png" alt="QuietNest Logo" class="logo">
+        </header>
+        
+        <section class="hero">
+            <h1>Protect Your Baby From Harmful Noise — QuietNest App</h1>
+            <p class="subtitle">Install QuietNest on your phone. Get real-time alerts when the noise around you becomes too loud for you and your baby's ears. Stay safe, stay confident.</p>
+            <button class="cta-button" onclick="showForm()">Get the app for €4.99</button>
+        </section>
+
+        <div id="signup-form" class="hidden">
+            <form id="interest-form" onsubmit="handleSubmit(event)">
+                <h2>Almost there!</h2>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="interest">Why are you interested in QuietNest?</label>
+                    <textarea id="interest" required placeholder="Tell us more..."></textarea>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        function showForm() {
+            document.getElementById('signup-form').classList.remove('hidden');
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            const interest = document.getElementById('interest').value;
+            // In a real app, this would send data to a server
+            alert('Thank you for your interest! We\'ll notify you when the app launches.');
+            document.getElementById('signup-form').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
